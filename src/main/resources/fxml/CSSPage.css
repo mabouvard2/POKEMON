@@ -1,0 +1,11 @@
+.pokemonCard{
+    -fx-background-color: red;
+    -fx-background-radius: 10;
+}
+
+#pane{
+ -fx-background-image : url("/images/background.jpg");
+ -fx-background-repeat : stretch;
+
+
+}

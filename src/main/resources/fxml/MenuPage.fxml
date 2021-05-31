@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.layout.StackPane?>
+
+<VBox alignment="CENTER" fx:controller="view.MenuPageController"
+      spacing="10.0" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:id="MenuPagePane"
+      >
+
+    <VBox spacing="1.0" alignment="CENTER">
+        <HBox alignment="CENTER">
+            <ImageView fx:id="menuLogo" preserveRatio="true" >
+                <Image url="/images/pokemonLogo.png"  />
+            </ImageView>
+        </HBox>
+
+      <HBox alignment="CENTER">
+
+        <Button fx:id="startButton" mnemonicParsing="false"
+                style="-fx-background-color: linear-gradient(green,darkgreen); -fx-cursor: pointer; -fx-translate-x: 18;"
+                text="Jouer" textFill="WHITE"
+                onMouseClicked="#navigateToGamePage">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="startButtonImage" preserveRatio="true">
+              <Image url="/images/pokemon4.png" />
+        </ImageView>
+      </HBox>
+
+      <HBox alignment="CENTER">
+          <Button fx:id="loadButton" mnemonicParsing="false"
+                  style="-fx-background-color: linear-gradient(red,darkred); -fx-cursor: pointer; -fx-translate-x: 18;"
+                  text="Stats" textFill="WHITE"
+                  onMouseClicked="#navigateToStatsPage"
+          >
+              <font>
+                  <Font name="System Bold" size="18.0" />
+              </font>
+          </Button>
+          <ImageView fx:id="loadButtonImage" preserveRatio="true">
+              <Image url="/images/pokemon5.png" />
+          </ImageView>
+      </HBox>
+      <HBox alignment="CENTER" >
+        <Button fx:id="settingButton" mnemonicParsing="false"
+                style="-fx-background-color: linear-gradient(blue,darkblue); -fx-translate-x: 18;"
+                text="Parametres" textFill="WHITE"
+                onMouseClicked="#navigateToSettingPage">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="settingButtonImage" preserveRatio="true">
+              <Image url="/images/pokemon2.png" />
+        </ImageView>
+      </HBox>
+      <HBox alignment="CENTER">
+        <Button fx:id="exitButton" mnemonicParsing="false"
+                style="-fx-background-color: linear-gradient(orange,red); -fx-translate-x: 18;"
+                text="Quitter" textFill="WHITE"
+                onMouseClicked="#exitProgram"
+        >
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ImageView  fx:id="exitButtonImage" preserveRatio="true">
+              <Image url="/images/pokemon3.png" />
+        </ImageView>
+      </HBox>
+        </VBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" />
+
+
+
+</VBox>
+
+
